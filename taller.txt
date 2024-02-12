@@ -1,0 +1,7 @@
+emanuel 
+victor
+eliana
+alejandra
+fabiana
+santiago
+el proyecto trata de un dispositivo que tomara temperatura y humedad en tiempo real en el sector avicola 
