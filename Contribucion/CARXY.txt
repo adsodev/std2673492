@@ -1,0 +1,2 @@
+INTEGRANTES: sara guerrero, andrea rodriguez, santiago erazo, luis candelo, harold paz cordoba
+ CAXY: carxy es una app web de peersonalizacion de carros con visualizacion 3d
