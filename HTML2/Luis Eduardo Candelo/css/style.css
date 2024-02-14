@@ -1,0 +1,15 @@
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table,
+thead,
+tbody,
+tr,
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
