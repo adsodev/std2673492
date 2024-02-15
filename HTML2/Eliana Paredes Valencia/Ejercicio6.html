@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+    <head>
+    <style>
+    fieldset {
+      background-color: #eeeeee;
+    }
+    
+    legend {
+      background-color: white;
+      color: black;
+      padding: 5px 10px;
+    }
+    
+    input {
+      margin: 5px;
+    }
+    </style>
+    </head>
+    <body>
+    <h1>Rellena tu CVC</h1>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Datos personales:</legend>
+        <label for="fname">Provincia:<br>
+            <select name="color" id="color">
+                <option value="r">Macizo</option>
+                <option value="a">Bota Caucana</option>
+                <option value="v">Nevados</option>
+              </select>
+              
+        </label><br>
+        <br><br>
+        <label for="lname">Fecha de nacimiento</label>
+        <input type="date" id="lname" name="lname"><br><br>
+        
+        <label for="msg">Tema de interes:</label> <br>
+          <textarea id="msg" name="user_message"></textarea>
+      </fieldset>
+    </form>
+    
+    </body>
+    </html>
