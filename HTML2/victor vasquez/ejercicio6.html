@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+<h1>Rellena tu CV</h1>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Datos personales:</legend>
+    <label for="fname">Provincia:<br>
+        <select name="color" id="color">
+            <option value="r">Rojo</option>
+            <option value="a">Azul</option>
+            <option value="v">Verde</option>
+          </select>
+    </label><br>
+    <br><br>
+    <label for="lname">fecha de nacimiento</label>
+    <input type="date" id="lname" name="lname"><br><br>
+    
+    <label for="msg">Tema de interes:</label> <br>
+      <textarea id="msg" name="user_message"></textarea>
+  </fieldset>
+</form>
+
+</body>
+</html>
