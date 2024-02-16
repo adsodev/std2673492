@@ -1,0 +1,15 @@
+
+table{
+    
+border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#cabezera {
+    color: aliceblue;
+  background-color: black;
+    text-align: center;
+  
+  }
+
+   

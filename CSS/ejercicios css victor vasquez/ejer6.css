@@ -1,0 +1,37 @@
+.som1{
+
+}
+.som2{
+    color: aliceblue;
+    text-shadow: 0.1em 0.1em 0.2em red
+}
+
+
+
+.som3{
+    text-shadow: 0.1em 0.1em 0.05em #333
+    sans-serif
+   
+
+}
+.som4{
+    width: 500px;
+    background-color: #E1DEDC;
+    text-shadow: -1px -1px white, 1px 1px #333
+    
+    
+}
+
+.som5{
+    width: 500PX;
+   background-color:  #878685;
+   text-shadow: 1px 1px white, -1px -1px #333
+}
+
+.som6{
+color: #ABB2B9;
+    width: 500PX;
+    background-color:  #D2D2D2;
+    text-shadow: -1px -1px #D2D2D2, 1px 1px #D2D2D2
+
+}

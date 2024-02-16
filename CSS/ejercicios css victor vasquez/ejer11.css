@@ -1,0 +1,25 @@
+table {
+    
+    border-collapse: separate;
+ width: 600px;
+ height: 200px;
+    
+}
+
+#verde{
+    color: green;
+}
+
+#top{
+    vertical-align: top;
+}
+
+#medd{
+    vertical-align: middle;
+}
+
+#bott{
+    vertical-align: bottom;
+}
+
+
