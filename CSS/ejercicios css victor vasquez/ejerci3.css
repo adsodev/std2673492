@@ -1,0 +1,16 @@
+#tex_azul{
+    color: blue;
+    text-align: center;
+}
+
+#parra_azul{
+    color: blue;
+    position: relative;
+    right: -380px;
+}
+
+#parra_rojo{
+    color: red;
+   position: absolute;
+   right: 450px;
+}
