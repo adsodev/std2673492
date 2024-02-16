@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.Sombra_2 {
+  color: white;
+  text-shadow: 2px 2px 5px red;
+}
+
+.Sombra_3 {
+  text-shadow: -2px -2px 5px red, -5px -5px 10px green, 2px 2px 2px gray;
+}
+
+.Sombra_4 {
+  background-color: #eee6e6;
+  color: white;
+  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+    0px -1px 0px black;
+}
+
+.Sombra_5 {
+  color: white;
+  background-color: #737373;
+  color: #737373;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93;
+}
+
+.Sombra_6 {
+  color: white;
+  background-color: #737373;
+  color: #acabab;
+  text-shadow: 0 -1px 0 #c4c4c4;
+}
