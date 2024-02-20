@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  box-shadow: -50px -50px 1px 1px blue, -100px -100px 1px 1px red;
+
+  margin: auto;
+  position: absolute;
+  inset: 0;
+}

@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  color: rgba(0, 55, 255, 0.6);
+  font-family: cursive;
+}
+
+.valor {
+  color: black;
+  font-family: sans-serif;
+}
