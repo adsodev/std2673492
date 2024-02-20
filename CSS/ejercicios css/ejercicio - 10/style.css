@@ -1,0 +1,31 @@
+.verde {
+  color: lime;
+}
+
+.container {
+  display: flex;
+  gap: 5px;
+}
+
+.box {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

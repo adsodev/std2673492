@@ -1,0 +1,22 @@
+* {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  border-right: 1px solid blue;
+  margin: 0;
+  padding: 20px;
+}
