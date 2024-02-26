@@ -1,0 +1,22 @@
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+.parrafo{
+    text-align: center;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+   justify-content: space-around;
+   margin: 10px;
+   padding: 10px;
+}
+
+.form{
+    padding: 5px;
+}

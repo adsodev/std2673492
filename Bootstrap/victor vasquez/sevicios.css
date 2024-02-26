@@ -1,0 +1,62 @@
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+}
+.parrafo{
+    text-align: center;
+}
+
+#ima1{
+   
+    width: 100px;
+    height: 100px;
+  
+
+}
+
+#ima2{
+    width: 100px;
+    height: 100px;
+}
+
+#ima3{
+    width: 100px;
+    height: 100px;
+}
+
+.final{
+    background-color: aqua;
+    width: 100%;
+    position: absolute;
+  text-align: center;
+    top: 70%;
+  
+}
+
+
+.final2{
+    display: flex;
+justify-content: space-around;
+
+}
+
+.final2 > div {
+    background-color: aqua;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    }
+    .pie{
+
+        position: absolute;
+        top: 100%;
+    }

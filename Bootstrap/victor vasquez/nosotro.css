@@ -1,0 +1,35 @@
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+#img1{
+    width: 288px;
+    height: 200px;
+
+}
+
+#img2{
+    width: 288px;
+    height: 300px;
+}
+
+#img3{
+    width: 288px;
+    height: 300px;
+}
+
+.pie{
+    text-align: center;
+    color: black;
+
+}
