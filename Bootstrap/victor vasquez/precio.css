@@ -1,0 +1,27 @@
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+.content{
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.content > div{
+    text-align: center;
+    height: 500px;
+    width: 288px;
+    line-height: 45px;
+
+}
+
+.parrafo{
+    text-align: center;
+    padding-top: 10px;
+}
