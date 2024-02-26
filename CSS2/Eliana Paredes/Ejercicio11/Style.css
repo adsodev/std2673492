@@ -1,0 +1,55 @@
+*{
+ 
+    box-sizing: border-box;
+}
+  
+
+
+.header{
+    border: solid 2px black;
+    background-color: green;
+    text-align: center;
+    padding: 15px;
+   
+}
+
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+
+[class*="col-"]{
+    text-align: center;
+    line-height: 300px;
+    float: left;
+    padding: 15px;
+    border: solid 2px white;
+
+}
+
+
+.col-1{ width: 10%; height: 317px;   background-color: red; }
+.col-2{width: 90%; height: 20px;  background-color: pink;}
+.col-3{width: 45%; height: 120px; background-color: rosybrown; }
+.col-4{width: 45%; height: 120px; background-color: rosybrown; }
+
+.col-5{width: 16%; height: 80px; background-color: blue; }
+.col-6{width: 16%; height: 80px; background-color: blue; }
+.col-7{width: 26%; height: 80px; background-color: blue; }
+.col-8{width: 16%; height: 80px; background-color: blue; }
+.col-9{width: 16%; height: 80px; background-color: blue; }
+
+
+.col-10{width: 16%; height: 80px; background-color: blue; }
+.col-11{width: 16%; height: 80px; background-color: blue; }
+.col-12{width: 26%; height: 80px; background-color: blue; }
+.col-13{width: 16%; height: 80px; background-color: blue; }
+.col-14{width: 16%; height: 80px; background-color: blue; }
+
+.pie{
+    border: solid 2px black;
+    background-color: green;
+    text-align: center;
+    padding: 15px;
+}

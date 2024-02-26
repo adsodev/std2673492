@@ -1,0 +1,41 @@
+* {
+    font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10PX;
+  padding: 10px;
+}
+
+.flex {
+    font-size: 30px;
+    width: 150px;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 {
+  background-color: red;
+  
+}
+
+.item2 {
+  background-color: brown;
+}
+
+.item3 {
+  background-color: violet;
+}
+
+.item4 {
+  background-color: green;
+}

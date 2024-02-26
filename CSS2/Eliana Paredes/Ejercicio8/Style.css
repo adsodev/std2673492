@@ -1,0 +1,31 @@
+.principal{
+    display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 4px;
+   background-color: white;
+   padding: 2px;
+  
+}
+
+.prin{
+    background-color: rgb(94, 181, 244);
+    height: 300px;
+   line-height: 300px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+
+}
+
+
+.prin2{
+    background-color: rgb(94, 181, 244);
+    height: 200px;
+   line-height: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+
+}

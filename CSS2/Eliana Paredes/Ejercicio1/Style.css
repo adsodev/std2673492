@@ -1,0 +1,47 @@
+.flex-container {
+    display: flex;
+    background-color: rgb(122, 129, 127);
+    border: 2px solid aquamarine;
+    align-items:flex-end;
+    flex-direction: column;
+   }
+   
+   .flex-container > div {
+    background-color: #ee1111;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+   }
+   
+   .cuadro1{
+         width: 300px;
+         line-height: 60px;
+         
+ }
+
+  .cuadro2{
+    width: 380px;
+    line-height: 75px;
+
+}
+
+ .cuadro3{
+    width: 500px;
+    line-height: 100px;
+
+}
+
+ .cuadro4{
+    width: 300px;
+    line-height: 60px;
+
+}
+
+ .cuadro5{
+    width: 380px;
+    line-height: 75px;
+
+}
+
+   

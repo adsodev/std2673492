@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  grid-area: header;
+  background-color: #2fe038;
+  padding: 5px;
+  text-align: left;
+  font-size: 10px;
+  margin:10px;
+  border: 1px solid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer1 footer1 footer1';
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  background-color: red;
+  margin: 10px 10px 10px 10px;
+  font-size: 30;
+}
+
+.left {
+  grid-area: left;
+  text-align: center;
+  background-color: red;
+  margin: 10px 10px 10px 10px;
+}
+
+.middle {
+  grid-area: middle;
+  text-align: center;
+  background-color: red;
+  margin: 10px 10px 10px 10px;
+}
+
+.right {
+  grid-area: right;
+  text-align: center;
+  background-color: red;
+}
+
+.footer {grid-area: footer;
+  background-color: yellow;
+  padding: 5px;
+  text-align: left;
+  font-size: 10px;
+  margin:10px;
+  border: 1px solid;
+}
+
+.footer1 {grid-area: footer1;
+  background-color: yellow;
+  padding: 5px;
+  text-align: left;
+  font-size: 10px;
+  margin:10px;
+  border: 1px solid;}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer1 footer1 footer1';
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="header">
+    <h2>Header</h2>
+  </div>
+  
+  <div class="left" style="background-color: red; font-size: 50; ; border: 1px solid;">1</div>
+  <div class="middle" style="background-color:red; font-size: 50; border: 1px solid;">2</div>  
+  <div class="right" style="background-color:red; font-size: 50; border: 1px solid;">3</div>
+  
+  <div class="footer style"="background-color:yellow; font-size: 50; border:1px solid;">Footer1</div>
+  <div class="footer1 style"="background-color:yellow; font-size: 50; border:1px solid;">Footer2</div>
+  </div>
+ 
+</div>
+
+</body>
+</html>
