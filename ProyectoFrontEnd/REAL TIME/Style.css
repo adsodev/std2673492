@@ -1,0 +1,165 @@
+* {
+    background: #3B6381;
+    color: white;
+}
+
+body {
+    background: #3B6381;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.cont {
+    color: white;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+
+}
+
+.card-body {
+    display: flex;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+
+
+}
+
+.Texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+
+.card-body {
+    border-radius: 5px;
+    background: whitesmoke
+}
+
+.botton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    background: whitesmoke;
+
+}
+
+.card-title {
+    background: whitesmoke;
+}
+
+.img-thumbnail {
+    width: 170px;
+    height: 150px;
+    background: transparent;
+    border: #0f569e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.btnclosee {
+    background: whitesmoke;
+    display: flex;
+    justify-content: end;
+}
+
+.clossse {
+    background: whitesmoke;
+}
+
+.wrapper {
+    width: 300px; 
+    height: 300px;
+    position: absolute; 
+    clip: rect(0px, 300px, 300px, 150px); 
+}
+
+  .circle {
+    width: 300px;
+    height: 300px;
+    border: 20px solid white;
+    border-radius: 150px;
+    position: absolute;
+    clip: rect(0px, 150px, 300px, 0px);
+  }
+  
+  div[data-anim~=base] {
+    -webkit-animation-iteration-count: 1;  
+    -webkit-animation-fill-mode: forwards; 
+    -webkit-animation-timing-function:linear; 
+  }
+  
+  .wrapper[data-anim~=wrapper] {
+    -webkit-animation-duration: 0.01s; 
+    -webkit-animation-delay: 3s;
+    -webkit-animation-name: close-wrapper; 
+  }
+  
+  .circle[data-anim~=left] {
+    -webkit-animation-duration: 6s; 
+    -webkit-animation-name: left-spin;
+  }
+  
+  .circle[data-anim~=right] {
+    -webkit-animation-duration: 3s; 
+    -webkit-animation-name: right-spin;
+  }
+ 
+  @-webkit-keyframes right-spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(180deg);
+    }
+  }
+  
+  @-webkit-keyframes left-spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes close-wrapper {
+    to {
+      clip: rect(auto, auto, auto, auto);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .text-container {
+    display: flex;
+    justify-content: stretch;
+    width: 300px;
+    margin-top: auto;
+  }
+
+  .text {
+    font-size: 24px;
+    text-align: center;
+  }
