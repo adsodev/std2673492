@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 7</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="formularioTriangulo">
+    <label for="baseInput">Base:</label>
+    <input type="number" id="baseInput" name="baseInput" required>
+    
+    <label for="alturaInput">Altura:</label>
+    <input type="number" id="alturaInput" name="alturaInput" required>
+
+    <button type="button" onclick="calcularArea()">Calcular Área</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    function calcularArea() {
+      var base = parseFloat(document.getElementById("baseInput").value);
+      var altura = parseFloat(document.getElementById("alturaInput").value);
+
+      if (!isNaN(base) && !isNaN(altura)) {
+        var area = (base * altura) / 2;
+        document.getElementById("resultado").innerHTML = "El área del triángulo es: " + area.toFixed(2);
+      } else {
+        document.getElementById("resultado").innerHTML = "Por favor, ingresa valores numéricos.";
+      }
+    }
+  </script>
+
+</body>
+</html>

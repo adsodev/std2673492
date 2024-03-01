@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 11</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .asiento {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .asiento.ocupado {
+      background-color: red;
+      cursor: not-allowed;
+    }
+
+    .asiento.disponible {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Seleccione su asiento:</h2>
+
+  <div id="asientos-container">
+  </div>
+
+  <script>
+    var asientos = [];
+
+    function inicializarAsientos() {
+      var asientosContainer = document.getElementById('asientos-container');
+
+      for (var fila = 1; fila <= 10; fila++) {
+        for (var columna = 1; columna <= 4; columna++) {
+          var nuevoAsiento = document.createElement('div');
+          nuevoAsiento.className = 'asiento disponible';
+          nuevoAsiento.dataset.fila = fila;
+          nuevoAsiento.dataset.columna = columna;
+          nuevoAsiento.onclick = function() { reservarAsiento(this); };
+
+          asientosContainer.appendChild(nuevoAsiento);
+          asientos.push({ fila: fila, columna: columna, ocupado: false });
+        }
+        asientosContainer.appendChild(document.createElement('br'));
+      }
+    }
+
+    function reservarAsiento(asiento) {
+      var fila = asiento.dataset.fila;
+      var columna = asiento.dataset.columna;
+
+      var asientoSeleccionado = asientos.find(function(a) {
+        return a.fila == fila && a.columna == columna;
+      });
+
+      if (asientoSeleccionado.ocupado) {
+        alert('Este asiento ya está reservado. Por favor, seleccione otro.');
+      } else {
+        asientoSeleccionado.ocupado = true;
+        asiento.className = 'asiento ocupado';
+      }
+    }
+
+    inicializarAsientos();
+  </script>
+
+</body>
+</html>
