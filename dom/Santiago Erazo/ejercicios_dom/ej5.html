@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5</title>
+</head>
+<body>
+
+  <form>
+    <label for="textoInput">Ingresa un texto:</label>
+    <input type="text" id="textoInput" name="textoInput">
+    <button type="button" onclick="obtenerValor()">Obtener Valor</button>
+  </form>
+
+  <script>
+    function obtenerValor() {
+      var inputTexto = document.getElementById("textoInput");
+      var valorTexto = inputTexto.value;
+      alert("Valor del formulario de texto: " + valorTexto);
+    }
+  </script>
+
+</body>
+</html>

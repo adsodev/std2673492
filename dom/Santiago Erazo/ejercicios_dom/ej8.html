@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 8</title>
+</head>
+<body>
+
+  <button onclick="mostrarImagenAleatoria()">Mostrar Imagen Aleatoria</button>
+
+  <div id="contenedorImagen">
+    <img id="imagenAleatoria" src="/img/imagen2.jpg" alt="Imagen Aleatoria">
+  </div>
+
+  <script>
+    function mostrarImagenAleatoria() {
+      var imagenes = [
+        '/img/imagen1.jpg',
+        '/img/imagen2.jpg',
+        '/img/imagen3.jpg',
+      ];
+
+      var indiceAleatorio = Math.floor(Math.random() * imagenes.length);
+      var imagenSeleccionada = imagenes[indiceAleatorio];
+
+      var imagenElemento = document.getElementById('imagenAleatoria');
+      imagenElemento.src = imagenSeleccionada;
+    }
+  </script>
+
+</body>
+</html>
