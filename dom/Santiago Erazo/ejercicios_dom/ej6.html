@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 6</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <table id="miTabla">
+    <tr>
+      <th>Encabezado 1</th>
+      <th>Encabezado 2</th>
+    </tr>
+    <tr>
+      <td>Fila 1, Celda 1</td>
+      <td>Fila 1, Celda 2</td>
+    </tr>
+  </table>
+
+  <button onclick="agregarFila()">Agregar Fila</button>
+
+  <script>
+    function agregarFila() {
+      var tabla = document.getElementById("miTabla");
+      var nuevaFila = tabla.insertRow();
+      var celda1 = nuevaFila.insertCell(0);
+      var celda2 = nuevaFila.insertCell(1);
+      celda1.innerHTML = "Nueva Fila, Celda 1";
+      celda2.innerHTML = "Nueva Fila, Celda 2";
+    }
+  </script>
+
+</body>
+</html>

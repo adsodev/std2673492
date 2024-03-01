@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 9</title>
+  <style>
+    body {
+      font-size: 20px;
+      transition: color 0.5s ease;
+    }
+
+    .color1 {
+      color: blue;
+    }
+
+    .color2 {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <p>Ejemplo</p>
+  <script>
+    var colorActual = 1;
+
+    function intercambiarColores() {
+      var bodyElement = document.body;
+
+      if (colorActual === 1) {
+        bodyElement.classList.remove('color2');
+        bodyElement.classList.add('color1');
+        colorActual = 2;
+      } else {
+        bodyElement.classList.remove('color1');
+        bodyElement.classList.add('color2');
+        colorActual = 1;
+      }
+    }
+
+    setInterval(intercambiarColores, 1000);
+  </script>
+
+</body>
+</html>

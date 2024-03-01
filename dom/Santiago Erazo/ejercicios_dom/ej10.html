@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mover Cuadro</title>
+  <style>
+    #cuadro {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transition: left 2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cuadro"></div>
+
+  <script>
+    function moverCuadro() {
+      var cuadroElement = document.getElementById("cuadro");
+      cuadroElement.style.left = "100%";
+    }
+
+    setTimeout(moverCuadro, 1000);
+  </script>
+
+</body>
+</html>
