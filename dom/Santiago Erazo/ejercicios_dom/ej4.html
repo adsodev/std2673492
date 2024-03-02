@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+  <style>
+    #nuevoBloque {
+      color: white;
+      background-color: red;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="crearNuevoBloque()">Crear</button>
+
+  <script>
+    function crearNuevoBloque() {
+      var nuevoDiv = document.createElement("div");
+      nuevoDiv.innerHTML = "Hola mundo";
+      nuevoDiv.style.color = "white";
+      nuevoDiv.style.backgroundColor = "red";
+      nuevoDiv.style.textAlign = "center";
+      nuevoDiv.style.padding = "10px";
+      nuevoDiv.style.margin = "10px";
+      document.body.appendChild(nuevoDiv);
+    }
+  </script>
+
+</body>
+</html>
