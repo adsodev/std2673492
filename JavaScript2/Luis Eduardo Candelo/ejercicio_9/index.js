@@ -1,8 +1,16 @@
+// Se cambia la función de generar numeros aleatorios a una que permita generar numeros pares cada cierto tiempo.
+
+let numPar = 0;
 function generarNumeroAleatorio() {
-    // Genera un número aleatorio entre 1 y 100
-    let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
-    console.log("Número aleatorio:", numeroAleatorio);
+
+
+    numPar = numPar + 2;
+
+    console.log("Numero pares: ", numPar)
+
+
+
 }
 
 
-setInterval(generarNumeroAleatorio, 10000); 
+setInterval(generarNumeroAleatorio, 1000000); 
