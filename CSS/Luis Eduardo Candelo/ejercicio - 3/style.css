@@ -1,0 +1,19 @@
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  color: #932301;
+  text-align: left;
+}
+
+.other {
+  text-align: right;
+  color: red;
+}

@@ -1,0 +1,14 @@
+.title {
+  color: #001aff;
+}
+
+span {
+  color: rgb(165, 136, 42);
+}
+
+button {
+  background-color: rgb(226, 250, 12);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}

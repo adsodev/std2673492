@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 400px;
+  height: 170px;
+}
+
+table {
+  width: 400px;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+tr {
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  border: 0.5px solid black;
+}

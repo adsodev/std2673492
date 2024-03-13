@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  box-shadow: -50px -50px 1px 1px purple, -100px -100px 1px 1px pink;
+
+  margin: auto;
+  position: absolute;
+  inset: 0;
+}
