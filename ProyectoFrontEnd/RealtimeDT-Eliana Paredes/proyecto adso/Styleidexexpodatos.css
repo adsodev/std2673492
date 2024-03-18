@@ -1,0 +1,56 @@
+*{
+    background: #0f569e;
+    color: white;
+}
+body{
+    background: #0f569e;
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+.cont{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center;
+    height: 100vh; 
+}
+.img-thumbnail{
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: #0f569e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+.Botton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+img{
+    background: transparent;
+    width: 50px;
+    height: 50px;
+}
+.btn-btn-outline-success{
+    border: solid 1px black;
+}
+.Containaermayor{
+display: grid;
+place-content: center;
+height: 100vh;
+
+}
+.table{
+    border-radius: 5px;
+}

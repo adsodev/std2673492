@@ -1,0 +1,33 @@
+*{
+ 
+    box-sizing: border-box;
+    color: white;
+  
+
+}
+.principal{
+    background-color: #90B3EC;
+}
+.pinmera{
+    border: solid 2px white;
+    text-align: center;
+    padding: 15px;
+}
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+
+[class*="col-"]{
+    text-align: center;
+    line-height: 300px;
+    float: left;
+    padding: 15px;
+    border: solid 2px white;
+
+}
+
+
+.col-3{ width: 10%; height: 300px; }
+.col-9{ width: 90%; height: 300px; }

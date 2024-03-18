@@ -1,0 +1,17 @@
+.grid-template {
+    display: grid;
+    grid-template-areas: "head head"
+                         "menu main"
+                         "foot foot";
+}
+
+/*section {
+    grid-column-gap: 100px;
+  grid-row-gap: 10px;
+}*/
+
+
+.a { grid-area: head; background: #1297FF }
+.b { grid-area: menu; background: #FF7E79 }
+.c { grid-area: main; background: #009193 }
+.d { grid-area: foot; background: #929292 }

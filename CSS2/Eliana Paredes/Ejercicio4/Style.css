@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  background-color: rgb(122, 129, 127);
+  border: 2px solid aquamarine;
+  align-items: flex-end;
+  gap: 20px;
+  height: 100px;
+}
+
+.flex-container > div {
+  background-color: #ee1111;
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuadro1 {
+  height: 40px;
+}
+
+.cuadro2 {
+  height: 60px;
+}
+
+.cuadro3 {
+  height: 80px;
+}
+
+.cuadro4 {
+  height: 45px;
+}
+
+.cuadro5 {
+  height: 65px;
+}

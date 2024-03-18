@@ -1,0 +1,38 @@
+*{
+ 
+    box-sizing: border-box;
+    color: white;
+  
+
+}
+.principal{
+    background-color: maroon;
+}
+.pinmera{
+    border: solid 2px white;
+    text-align: center;
+    padding: 15px;
+   
+}
+
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+
+[class*="col-"]{
+    text-align: center;
+    line-height: 300px;
+    float: left;
+    padding: 15px;
+    border: solid 2px white;
+
+}
+
+
+.col-1{ width: 20%; height: 400px; }
+.col-2{ width: 60%;  }
+.col-3{ width: 20%;  }
+.col-9{width: 80%; justify-content: right;
+}

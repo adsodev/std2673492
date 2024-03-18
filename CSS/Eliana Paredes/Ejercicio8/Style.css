@@ -1,0 +1,23 @@
+table{
+    
+    border-collapse: collapse;
+    border-color: white;
+}
+
+#titulo{
+    text-align: center;
+    color: white;
+    background-color:#878685 ;
+    height: 35px;
+   
+}
+
+#conte{
+    background-color: whitesmoke;
+    border-color: white;
+}
+
+#pie{
+    text-align: center;
+    background-color: #ABB2B9;
+}

@@ -1,0 +1,24 @@
+
+div{
+    /*imagen*/
+        width: 472px;
+      height: 472px;
+      background-image: url(https://img.freepik.com/fotos-premium/cielo-azul-nubes-blancas-claras-es-buen-estado-animo-dia-fondo-cielo-natural-fondo-panoramico_638259-1063.jpg);
+    /*borde*/
+       width: 700px;
+        height: 150px;
+        border-color: rgb(242, 234, 234);
+        border-width: 5px;
+        border-style: solid ;
+    }
+    
+    p{
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    button{
+        background-color: blue;
+        border-color: blue;
+        color: white;
+    }

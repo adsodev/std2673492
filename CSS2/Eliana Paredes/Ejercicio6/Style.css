@@ -1,0 +1,47 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+.navbar{
+    background-color: green;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    line-height: 40px;
+}
+.content{
+    padding: 2px;
+    border: solid 1px black;
+    flex-direction: column;
+
+
+}
+.content > div{
+    height: 40px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.rosado{
+    background-color: pink;
+}
+
+.azul{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin: 2px;
+}
