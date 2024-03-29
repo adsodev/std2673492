@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  box-sizing: border-box;
+
+  --bg-50: #edfaff;
+  --bg-100: #d6f2ff;
+  --bg-200: #b5eaff;
+  --bg-300: #83dfff;
+  --bg-400: #48cbff;
+  --bg-500: #1eadff;
+  --bg-600: #068fff;
+  --bg-700: #007bff; /* Coloor Primario */
+  --bg-800: #085ec5;
+  --bg-900: #0d519b;
+  --bg-950: #0e315d;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+app-root {
+  color-scheme: dark light;
+  font-family: "Poppins", sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  width: 100%;
+  height: 100%;
+}
