@@ -1,0 +1,18 @@
+<form [formGroup]="inicioForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3 mt-3">
+        <label for="title" class="form-label">Título:</label>
+        <input type="text" class="form-control" id="title" placeholder="Título" name="title" formControlName="title">
+        @if (inicioForm.get('title')?.hasError('required') && inicioForm.get('title')?.touched) {
+        <div class="alert alert-danger">Título es requerido</div>
+        }
+    </div>
+    <div class="mb-3">
+        <label for="body" class="form-label">Contenido:</label>
+        <input type="text" class="form-control" id="body" placeholder="Contenido" name="body" formControlName="body">
+        @if (inicioForm.get('body')?.hasError('required') && inicioForm.get('body')?.touched) {
+        <div class="alert alert-danger">Contenido es requerido</div>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    <button type="button" class="btn btn-dark" (click)="onClose()">Cancelar</button>
+</form>
