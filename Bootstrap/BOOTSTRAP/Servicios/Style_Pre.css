@@ -1,0 +1,51 @@
+
+.plan-style {
+    margin:auto;
+    text-align:center;
+    background-color: rgb(252, 252, 252);
+    position:relative;
+    border-radius:30px;
+    border-color: gray;
+    border: 1px solid;
+}
+
+
+
+.plan-style .plan-header {
+    padding:30px 0 20px 0;
+    z-index:1;
+    position: relative;
+}
+
+.plan-style .plan-header .price {
+    width: 130px;
+    margin: 30px auto -2px;
+    border-radius: 5px;
+    display:flex;
+    color: #6a6c6d;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+}
+
+.plan-style .plan-header .price .price-digit {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.plan-style .plan-detail {
+    z-index:1;
+    position: relative;
+}
+
+.plan-style .plan-detail ul {
+    padding:0;
+    list-style-type:none;
+    color: black;
+}
+
+.plan-style .plan-detail ul li {
+    padding:5px 0;
+}
+
