@@ -1,0 +1,9 @@
+app-header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+}
+
+app-main {
+  grid-column: 1 / 13;
+  grid-row: 2 / 13;
+}
