@@ -74,21 +74,5 @@ export class TableComponent {
     {date: "15/05/18", title: "Post #1", category: "Web Development"},
     {date: "15/05/18", title: "Post #1", category: "Web Development"},
     {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
-    {date: "15/05/18", title: "Post #1", category: "Web Development"},
   ];
-
 }

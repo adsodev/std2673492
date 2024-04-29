@@ -1,0 +1,27 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: var(--bg-500);
+  transition: all ease-in-out 300ms;
+}
+
+.box.active {
+  border-radius: 50%;
+}
+
+button {
+  width: 200px;
+  background-color: var(--bg-500);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  transition: all 300ms ease-in-out;
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--bg-400);
+  transform: translateY(-1px);
+}

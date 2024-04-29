@@ -1,0 +1,105 @@
+<section class="section-wrapper">
+  <!--
+    # <-- Titulo de carga principal
+  -->
+  <h1 class="title">Lista de chequeo</h1>
+  <!--
+    ***************************************************************************
+    * Aquí encoontras las acciones para poder agregar nuevas tareas           *
+    * Constara de un boton y una entrada de tipo texto                        *
+    * Cuando se haga click en el boton se agregara una nueva tarea  *
+    ***************************************************************************
+   -->
+  <div class="new-todo">
+    <input
+      type="text"
+      name="new__todo-input"
+      id="NewTodo"
+      placeholder="Agrega una nueva tarea"
+      [formControl]="newTodo"
+      (keydown.enter)="addTodo()"
+    />
+
+    <button (click)="addTodo()"><i class="fa-solid fa-plus"></i></button>
+  </div>
+
+  <!--
+    ***************************************************************************
+    * Aquí Encontraras Botones para filtrar las tareas                        *
+    * Solo dale click para poder buscara                                      *
+    * Solo tenemos tres opciones | Todos | Activos | Completados              *
+    ***************************************************************************
+   -->
+  <div class="filters">
+    <button (click)="changefilter('all')" [class.active]="filter() === 'all'">
+      Todos
+    </button>
+    <button
+      (click)="changefilter('active')"
+      [class.active]="filter() === 'active'"
+    >
+      Activos
+    </button>
+    <button
+      (click)="changefilter('completed')"
+      [class.active]="filter() === 'completed'"
+    >
+      Completado
+    </button>
+  </div>
+  <!--
+    ***************************************************************************
+
+                        Aquí es dónde comienza la magia
+                    Las tareas que agregastes pareceran acá.
+
+    ***************************************************************************
+   -->
+
+  <div class="container_todoLlist">
+    <ul class="TodoList">
+      <!-- TODO -->
+
+      @for (todo of TodoListFilters(); track todo.id) { @if (!todo.editing) {
+        
+        <li class="todo">
+        @if (todo.edited === true) {
+        <div class="show_info">
+          <span>Editado</span>
+        </div>
+        }
+        <input
+          type="checkbox"
+          [checked]="todo.completed"
+          (click)="toogleTodo(todo.id)"
+        />
+        <label [class.completed]="todo.completed === true">{{
+          todo.title
+        }}</label>
+        @if (!todo.completed) {
+        <button class="editing" (click)="updateTodo(todo.id)">Editar</button>
+        }
+        <button class="delete" (click)="removeTodo(todo.id)">Eliminar</button>
+      </li>
+      } @else {
+
+      <!-- Editing -->
+
+      <li class="todo-editing">
+        <input
+          type="text"
+          placeholder="Editar tarea"
+          [value]="todo.title"
+          #editedInput
+          (keydown.enter)="editedTodo(todo.id, editedInput.value)"
+        />
+
+        <i
+          class="fa-regular fa-paper-plane"
+          (click)="editedTodo(todo.id, editedInput.value)"
+        ></i>
+      </li>
+      } }
+    </ul>
+  </div>
+</section>

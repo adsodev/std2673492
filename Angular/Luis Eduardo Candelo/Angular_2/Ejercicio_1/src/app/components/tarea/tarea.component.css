@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 
+*
+*
+* New todo
+*
+*
+*/
+
+.new-todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 400ms ease;
+}
+
+.new-todo input {
+  background-color: var(--bg-100);
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  border: 5px solid var(--bg-500);
+}
+
+.new-todo input:focus,
+.new-todo input:hover {
+  border: 5px solid var(--bg-600);
+  background-color: var(--bg-200);
+}
+
+.new-todo button {
+  position: absolute;
+  right: 0;
+
+  text-align: center;
+  border: none;
+  padding: 0 10px;
+  height: 100%;
+  width: 30px;
+  border-radius: 10px;
+  background-color: var(--bg-700);
+  transition: all 400ms ease;
+}
+
+.new-todo button:hover {
+  background-color: var(--bg-600);
+  cursor: pointer;
+}
+
+/* 
+*
+*
+* FILTERS
+*
+*
+*/
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 8px;
+}
+
+.filters button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--bg-200);
+  color: #333;
+  border: 4px solid var(--bg-500);
+  transition: all 400ms ease;
+}
+
+.filters button:hover {
+  background-color: var(--bg-300);
+  cursor: pointer;
+}
+
+.filters button.active {
+  background-color: var(--bg-400);
+}
+
+/* 
+*
+*
+* TODOOOOO
+*
+*
+*/
+
+.container_todoLlist {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  height: 400px;
+  scrollbar-width: thin;
+  overflow-y: auto;
+}
+
+.show_info {
+  width: fit-content;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0.7em;
+  z-index: 1;
+}
+
+.TodoList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.TodoList li {
+  padding: 8px 10px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  position: relative;
+
+  background-color: var(--bg-200);
+
+  transition: all ease 300ms;
+}
+
+.TodoList li:hover {
+  transform: translateY(-1px);
+}
+
+.TodoList li.todo label {
+  flex-shrink: 1;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TodoList li.todo label.completed {
+  text-decoration: line-through;
+  color: darkgreen;
+  transition: all 400ms ease;
+}
+
+.TodoList li.todo:hover button {
+  z-index: 1;
+  position: relative;
+  opacity: 1;
+}
+
+.TodoList li.todo button {
+  opacity: 0;
+  padding: 5px;
+  border-radius: 10px;
+  color: #333;
+  background-color: var(--bg-200);
+  border: 3px solid var(--bg-500);
+  transition: all 400ms ease;
+}
+
+.TodoList li.todo button.delete:hover {
+  background-color: rgb(242, 157, 157);
+  cursor: pointer;
+}
+
+.TodoList li.todo button.editing:hover {
+  background-color: var(--bg-300);
+  cursor: pointer;
+}
+
+.TodoList li.todo input[type="checkbox"] {
+  appearance: none;
+  /* Aplico mis estilos */
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid var(--bg-700);
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.TodoList li.todo input[type="checkbox"]:checked {
+  background-color: lightgreen;
+  border: 3px solid var(--bg-50);
+}
+
+.todo-editing {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-editing input[type="text"] {
+  background-color: var(--bg-100);
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+
+  border: 5px solid var(--bg-500);
+}
+
+.todo-editing input[type="text"]:focus,
+.todo-editing input[type="text"]:hover {
+  border: 5px solid var(--bg-600);
+  background-color: var(--bg-200);
+}
+
+.todo-editing i {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.todo-editing i:hover {
+  color: var(--bg-600);
+}

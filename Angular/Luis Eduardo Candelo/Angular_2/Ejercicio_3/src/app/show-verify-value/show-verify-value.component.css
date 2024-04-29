@@ -1,0 +1,14 @@
+.validate {
+  color: red;
+  border: 1px solid red;
+  outline: none;
+}
+
+input {
+  width: 200px;
+  color: black;
+  padding: 10px;
+  background-color: var(--bg-200);
+  border: none;
+  border-bottom: 1px solid var(--bg-400);
+}

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: min-content;
+  height: max-content;
+}
+
+.container_text {
+  width: 400px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.change {
+  font-size: small;
+}
+
+button {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--bg-500);
+  color: white;
+  width: 200px;
+  border: none;
+
+  transition: transform 300ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background-color: var(--bg-400);
+}

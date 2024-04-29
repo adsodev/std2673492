@@ -1,0 +1,15 @@
+button {
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid var(--bg-400);
+  padding: 20px;
+  background-color: transparent;
+  color: var(--bg-400);
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+button:hover {
+  border: 1px solid var(--bg-500);
+  color: var(--bg-500);
+}
