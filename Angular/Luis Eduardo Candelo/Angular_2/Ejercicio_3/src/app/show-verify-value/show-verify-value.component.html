@@ -1,0 +1,13 @@
+<input
+  type="text"
+  #InputShow
+  (input)="onInputChange($event)"
+  [class.validate]="validateMaxLeghtcharters === true"
+  placeholder="Escribe cualquier cosa"
+/>
+
+<p>Si Caracteres es mayor o igual a 10 aparecera un color rojo</p>
+<span>
+  Caracteres |
+  {{ InputShow.value.length }}
+</span>

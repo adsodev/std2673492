@@ -1,0 +1,9 @@
+@for (items of productos; track items.id) {
+<app-producto
+  name="{{ items.name }}"
+  price="{{ items.price }}"
+  description="{{ items.description }}"
+></app-producto>
+}
+
+<router-outlet />

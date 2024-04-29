@@ -1,0 +1,14 @@
+<div
+  class="box"
+  [style.background-color]="selectedColor"
+  (click)="InputColor.click()"
+></div>
+
+{{ this.selectedColor }}
+
+<input
+  type="color"
+  (input)="updateColor($event)"
+  #InputColor
+  style="display: none"
+/>

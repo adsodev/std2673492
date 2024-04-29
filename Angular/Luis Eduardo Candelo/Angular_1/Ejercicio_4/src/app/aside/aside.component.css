@@ -1,0 +1,104 @@
+.container-aside {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  gap: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.brands {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: clamp(1.2em, 50%, 1.5em);
+  gap: 10px;
+  transition: all ease 400ms;
+}
+
+.brands_icon {
+  font-size: 1.6em;
+}
+
+.brands_title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.yellow {
+  font-weight: normal;
+  color: var(--bg2-500);
+}
+
+.border {
+  width: 70%;
+  border-bottom: 1px solid var(--bg2-500);
+}
+
+.main-nav__aside {
+  width: 100%;
+}
+
+.main-menu {
+  font-size: clamp(1.2em, 50%, 1.5em);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  height: 100%;
+  list-style-type: none;
+}
+
+.element-new {
+  padding: 1px;
+  background-color: var(--bg2-500);
+  color: black;
+  width: 70px;
+}
+
+.menu-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-link:hover {
+  color: var(--bg2-500);
+}
+
+.data-text {
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  .ShowNone {
+    display: none;
+  }
+
+  .main-menu {
+    align-items: center;
+  }
+
+  .element-new {
+    display: none;
+  }
+
+  .menu-link:hover > .element-new {
+    display: block;
+    position: absolute;
+    left: 30px;
+  }
+}

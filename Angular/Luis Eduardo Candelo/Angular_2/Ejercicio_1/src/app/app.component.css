@@ -1,0 +1,8 @@
+app-tarea {
+  width: fit-content;
+  background-color: var(--bg-100);
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid var(--bg-500);
+  transition: all 300ms ease-out;
+}

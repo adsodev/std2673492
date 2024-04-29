@@ -1,0 +1,10 @@
+<section [class.theme]="this.StatusVar === true">
+  <h1>Apply Styles</h1>
+  <ul>
+    @for (items of Lists; track items.id) {
+    <li>{{ items.valueitem }}</li>
+    }
+  </ul>
+</section>
+
+<button (click)="toogleTheme()">Apply Styles</button>
